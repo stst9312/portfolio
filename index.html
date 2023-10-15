@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   <title>main</title>
+   
+    <style>
+    .balloon {
+        position: relative;
+        display: inline-block;
+    }
+ 
+    .balloon span {
+        display: inline-block;
+        padding: 10px;
+        color: #fff;
+        background: #ad1e51;
+        border-radius: 20px;
+    }
+ 
+    .balloon:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+ 
+    .balloon.top:after, .balloon.bottom:after {
+        border-width: 15px 10px;
+        left: 50%;
+        margin-left: -10px;
+    }
+ 
+    .balloon.top:after {
+        border-color: #ad1e51 transparent transparent transparent;
+        bottom: -25px;
+    }
+
+    .balloon {
+  position:relative;
+  top:20px;
+  
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    input#hello {
+    display: block;
+   
+
+    padding: 10px;
+}
+body{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <script>
+        function pagemove(){
+            window.location.href = "http://127.0.0.1:5500/main1.html"
+        }
+    </script>
+   <p><div class="balloon top"><span>ㅋㅋ</span></div></p>
+<p>
+    <img src="frog.jpg" width="300">
+</p>
+
+    <p><input id="hello" type="button" value="확인해보기" onclick="pagemove()"></p>
+</body>
+</html>
