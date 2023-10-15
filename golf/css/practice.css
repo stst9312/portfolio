@@ -1,0 +1,917 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 42px;
+    color: #222;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    background-color: white;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/accolade-creative-sdwbOqQ0M6k-unsplash.jpg) center;
+    background-size: cover;
+    padding: 50px 100px;
+}
+
+nav {
+    /* padding:50px 100px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background: url(../img/화면\ 캡처\ 2023-08-09\ 142058.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+nav>ul {
+    display: flex;
+    margin-top: 10px;
+    padding-left: 30%;
+    position: relative;
+}
+
+nav>ul a {
+    color: white;
+}
+
+nav>ul>li {
+    margin: 0 0 0 70px;
+    text-align: center;
+}
+
+.hidden_menu {
+    width: 120px;
+    background-color: rgba(255, 255, 255, .5);
+    text-align: center;
+    border-radius: 10px;
+    color: #111;
+    padding: 10px 0;
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+.hidden_menu>div {
+    cursor: pointer;
+}
+
+nav>ul>li:hover .hidden_menu {
+    display: block;
+}
+
+.nav_right {
+    display: flex;
+}
+
+.nav_reserve {
+    border: 1px solid white;
+    background-color: rgba(1, 1, 1, .5);
+    height: 48px;
+    color: white;
+    padding: 10px 30px;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+.menu_icon {
+    margin: 15px 0 0 5px;
+    cursor: pointer;
+}
+
+.menu_icon>div {
+    width: 30px;
+    border-top: 2px solid white;
+    margin-bottom: 5px;
+}
+
+.h_main {
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h_main_left {
+    padding-top: 100px;
+}
+
+.h_main_left>div:first-child {
+    font-size: 48px;
+}
+
+/* .h_main_right{
+    width: 500px;
+    height:700px;
+    background-color: rgba(1,1,1,.5);
+    color:white;
+}
+.month{
+    display: flex;
+    padding-left: 35%;
+    margin-top: 30px;
+}
+.month>div{
+    margin:20px 10px;
+}
+.month>h1{
+    color:white;
+    text-align: center;
+}
+.month_infor{
+    display: flex;
+    font-size: 12px;
+    margin-left: 32%;
+}
+.month_infor>div{
+    margin:0 10px;
+}
+
+.green_box{
+    display: inline-block;
+    padding:3px 10px;
+    background-color: #03a600;
+    border-radius: 8px;
+    font-size: 12px;
+}
+.today_box{
+    display: inline-block;
+    padding:5px 30px;
+    background-color: #fff;
+    color:#111;
+    border-radius: 10px;
+    font-size: 12px;
+}
+table{
+    width:100%;
+    margin-top: 20px;
+}
+
+th{
+    font-weight: bold;
+}
+td{
+    text-align: center;
+    padding:10px;
+}
+.sun{
+    color:red;
+}
+.sat{
+    color:blue;
+}
+.today{
+    background-color: white;
+    padding:8px 0;
+    border-radius: 15px;
+    height:50px;
+    color:black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.deadline{
+    display: inline-block;
+    padding:3px 5px;
+    background-color: #b2b3b3;
+    border-radius: 7px;
+    font-size: 8px;
+}
+.login{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding:0 30px;
+}
+.login div{
+    margin-top: 7px;
+}
+.login>div input{
+    margin-left: 50px;
+    background-color: white;
+    border:none;
+    text-align: center;
+}
+.login_btn{
+    padding:25px;
+    background-color: #03a600;
+    color:white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.join{
+    margin:20px 0 0 250px;
+    display: flex;
+    text-align: right;
+} */
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+.h_main_right>div {
+    background-color: rgba(1, 1, 1, .5);
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: -30px;
+}
+
+td {
+    padding: 10px 10px;
+}
+
+.calendar_left {
+    transform: rotate(180deg);
+    border-color: white;
+}
+
+.calendar_right {}
+
+.Calendar {
+    text-align: center;
+}
+
+.Calendar>thead>tr:first-child>td {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.Calendar>thead>tr:last-child>td {
+    font-family: 'Questrial', sans-serif;
+    font-weight: 600;
+}
+
+.Calendar>tbody>tr>td>p {
+    font-family: 'Montserrat', sans-serif;
+    height: 45px;
+    width: 45px;
+    border-radius: 45px;
+    transition-duration: .2s;
+    line-height: 45px;
+    margin: 2.5px;
+    display: block;
+    text-align: center;
+}
+
+.pastDay {
+    color: lightgray;
+}
+
+.today {
+    /* background-color: #F5D042; */
+    background-color: #03a600;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.futureDay {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.futureDay:hover {
+    background: black;
+    color: white;
+}
+
+.futureDay.choiceDay,
+.today.choiceDay {
+    background: #0A174E;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.sun{
+    color:red;
+}
+.sat{
+    color:blue;
+}
+.login {
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.login div {
+    margin-top: 10px;
+}
+
+.login>div input {
+    width: 200px;
+    margin-left: 50px;
+    background-color: white;
+    border: none;
+    text-align: center;
+}
+
+.login_btn {
+    padding: 20px 30px;
+    background-color: #03a600;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+.join {
+    margin: 20px 0 0 235px;
+    padding:10px 0 20px 0;
+    display: flex;
+    text-align: right;
+}
+
+
+
+
+
+/*********************************/
+
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 200px 150px 0 150px;
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+}
+
+.beige_box {
+    width: 60%;
+    height: 1000px;
+    background-color: #F6F4F1;
+    position: absolute;
+    left: -200px;
+    z-index: -1;
+}
+
+.cc {
+    font-size: 100px;
+    color: #2222220D;
+    position: absolute;
+    right: 940px;
+}
+
+.beige_box_big_txt {
+    font-size: 42px;
+    padding: 80px 0 40px 0px;
+    color: #222
+}
+
+.beige_box_small_txt {
+    font-size: 22px;
+    color: #222;
+}
+
+.beige_box_img {
+    margin: 100px 0;
+    width: 900px;
+    height: 500px;
+    background: url(../img/광주cc_코스2.jpg);
+    background-size: cover;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s_first_right_img {
+    width: 600px;
+    height: 700px;
+    margin-top: 100px;
+    background: url(../img/다운로드.jpg) bottom;
+    background-size: cover;
+
+}
+
+.beige_box_big_txt2 {
+    font-size: 31px;
+    color: #222;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.best_golf {
+    font-size: 100px;
+    text-align: right;
+    color: #2222220D;
+}
+
+/***********************************/
+
+main>section:nth-child(2) {
+    margin-top: 200px;
+}
+
+.detail {
+    display: flex;
+    position: relative;
+    margin: 50px 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.detail>div:first-child {
+    width: 35px;
+    height: 50px;
+    background-color: #f3eee7;
+    position: absolute;
+    z-index: -1;
+}
+
+.detail>div:nth-child(2) {
+    padding: 10px 10px 0 20px;
+}
+
+#detail_arrow {
+    margin-top: 18px;
+}
+
+.right_arrow {
+    width: 10px;
+    height: 10px;
+    margin-top: 7px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: rotate(45deg);
+}
+
+.course {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course>div {
+    width: calc((100% - 150px) / 3);
+    height: 100%;
+    overflow: hidden;
+    transition: .5s;
+    transform: scale(1.0);
+}
+
+/* .course>div:hover{
+    transition:.5s;
+    transform:scale(1.1);
+} */
+.course_txt {
+    display: flex;
+    margin: 0 0 20px 200px;
+}
+
+.course_txt>div:first-child {
+    text-align: center;
+}
+
+.course_arrow {
+    margin-left: 5px;
+}
+
+.course1 {
+    background: url(../img/동악.jpg);
+}
+
+.course2 {
+    background: url(../img/섬진.jpg);
+}
+
+.course3 {
+    background: url(../img/설산.jpg);
+}
+
+.course_img {
+    height: 30vh;
+    background-size: cover;
+}
+
+.course_img:hover {
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+
+/*****************************************/
+
+
+main>section:nth-child(3) {
+    margin-top: 300px;
+    position: relative;
+}
+
+.cook {
+    width: 35%;
+    height: 550px;
+    position: absolute;
+    background: url(../img/요리.jpg);
+    background-size: cover;
+}
+
+.wine {
+    width: 25%;
+    height: 500px;
+    position: absolute;
+    background: url(../img/와인.jpg);
+    background-size: cover;
+    margin: 150px 0 0 500px;
+}
+
+.second_golf {
+    position: absolute;
+    top: 560px;
+    left: -50px;
+}
+
+.s_second_right {
+    margin-left: 100px;
+}
+
+.second_beige_box {
+    width: 65%;
+    height: 700px;
+    background-color: #F6F4F1;
+    position: absolute;
+    right: -200px;
+    z-index: -1;
+}
+
+.second_cc {
+    position: absolute;
+    top: 0;
+    right: -50px;
+}
+
+.res {
+    margin-top: 220px;
+    font-size: 22px;
+}
+
+.chef {
+    font-size: 45px;
+    padding: 30px 0;
+}
+
+.best_favor {
+    font-size: 20px;
+}
+
+
+
+/***************************************/
+
+
+.facility {
+    margin-top: 400px;
+}
+
+.facility>ul {
+    width: 750px;
+    margin: 100px 0 50px 0;
+}
+
+/* .facility>div{
+    display: flex;
+} */
+.facility_left_pic {
+    width: 50%;
+    height: 500px;
+    background: url(../img/clubhouse03.jpg) no-repeat;
+    background-size: cover;
+}
+
+.facility_right_pic {
+    width: 45rem;
+    height: 350px;
+    background: url(../img/clubhouse05.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.facility>div h2 {
+    font-size: 25px;
+    color: #222;
+    padding: 10px 0;
+}
+
+.facility>div div {
+    color: #7f7f7f
+}
+
+.facility>div .detail {
+    margin-top: 10px;
+}
+
+main>section:last-child {
+    margin-top: 200px;
+}
+
+.notice {
+    padding-top: 35px;
+    border-bottom: 1px solid black;
+}
+
+/*
+.notice_pic{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.notice_pic>div{
+    width:calc((100% - 100px) / 3);
+    height:250px;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.notice_pic>div:hover{
+    transform: scale(1.1);
+}
+.notice_pic>div>div{
+    width:50%;
+    height:70%;
+    border-radius: 30px;
+    background-color:rgba(255,255,255,.5);
+    margin:40px auto 0 auto;
+    border:1px solid rgba(255,255,255,0)
+}
+.notice_pic>div h2{
+    margin-top: 50px;
+    font-size: 24px;
+    color:#fff;
+    opacity: 1;
+    text-shadow: 1px 0 0 #111, 0 1px 0 #111, -1px 0 0 #111, 0 -1px 0 #111;
+    z-index: 9;
+}
+.notice_pic1{
+    background: url(../img/그린피.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 30px;
+}
+.notice_pic2{
+    background: url(../img/회원.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 30px;
+}
+.notice_pic3{
+    background: url(../img/위약규정.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 30px;
+} */
+/**********************************************/
+footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 130vh;
+    background-color: #302b26;
+}
+
+.f_top {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    background-color: #605643;
+}
+
+.map {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
+.f_top_right {
+    padding: 100px 80px 50px 10%;
+}
+
+.f_top_right>h1 {
+    color: white;
+    opacity: .5;
+}
+
+.big_nature {
+    color: white;
+    opacity: .5;
+    font-size: 24px;
+    padding: 50px 0;
+    margin-bottom: 100px;
+}
+
+.address {
+    color: white;
+    opacity: .5;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.f_top_right>div>ul {
+    display: flex;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.f_top_right>div>ul>li {
+    text-align: center;
+    display: flex;
+    color: white;
+    opacity: .5;
+    margin-right: 20px;
+}
+
+.icon1 {
+    background: url(../img/네이버\ 아이콘.svg)no-repeat;
+}
+
+.icon2 {
+    background: url(../img/카카오\ 아이콘.svg)no-repeat;
+}
+
+.icon3 {
+    background: url(../img/구글\ 아이콘.svg)no-repeat;
+}
+
+.map_icon {
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    margin-top: 4px;
+    margin-right: 3px;
+}
+
+.f_bot {
+    display: flex;
+    padding: 80px 80px 0 80px;
+}
+
+.f_bot>div {
+    width: calc(100% / 2);
+}
+
+.f_bot h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.f_bot>div:first-child>h1 {
+    margin-bottom: 150px;
+}
+
+.f_bot ul {
+    display: flex;
+    margin: 10px 0;
+}
+
+.f_bot ul>li {
+    display: flex;
+    font-size: 14px;
+}
+
+.title {
+    color: white;
+}
+
+.content {
+    color: white;
+    opacity: .5;
+    padding: 0 30px 0 15px;
+}
+
+.f_bot_right {
+    padding-left: 100px;
+}
+
+.f_bot_right>h1 {
+    margin-bottom: 50px;
+}
+
+.call {
+    display: flex;
+    margin: 30px 0;
+}
+
+.call>h2 {
+    font-size: 24px;
+    color: white;
+}
+
+.call>div {
+    color: white;
+    opacity: .5;
+    padding: 7px 0 0 20px;
+}
+
+.infor>li {
+    margin-right: 25px;
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-top: 100px;
+}
+
+.infor>li:first-child {
+    color: white;
+}
+
+.copyright {
+    font-size: 12px;
+    color: white;
+    opacity: .2;
+}
+
+
+/************************************************/
+
+.swiper-slide {
+    border: 1px solid black;
+    margin-right: 50px;
+}
+
+.notice_pic1 {
+    background: url(../img/그린피.jpg) center;
+    background-size: cover;
+}
+
+.notice_pic2 {
+    background: url(../img/회원.jpg) center;
+    background-size: cover;
+}
+
+.notice_pic3 {
+    background: url(../img/위약규정.jpg) center;
+    background-size: cover;
+}
+
+.notice_pic4 {
+    background: url(../img/골프차.jpg) center;
+    background-size: cover;
+}
+
+.notice_pic5 {
+    background: url(../img/골프공.jpg) center;
+    background-size: cover;
+}
+
+.notice_pic {
+    margin-top: 50px;
+    height: 35vh;
+}
+
+.notice_pic>div {
+    transition: .2s
+}
+
+.notice_pic>div>div:hover {
+    transition: .2s;
+    transform: scale(1.1);
+}
+
+.notice_inbox {
+    width: 50%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 30px;
+    margin: 10% auto 0 auto;
+}
+
+.notice_pic div h2 {
+    padding-top: 75px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 0 0 #111, 0 1px 0 #111, -1px 0 0 #111, 0 -1px 0 #111;
+    z-index: 9;
+}
+
+.calendar_left {
+    transform: rotate(-135deg);
+    border-width: 2px;
+    border-color: white;
+    margin:0 0 5px 40px;
+
+}
+
+.calendar_right {
+    transform: rotate(deg);
+    border-width: 2px;
+    border-color: white;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,28 @@
+.pizza_1{
+    display: flex;
+}
+.img_pizza{
+    display: flex;
+    flex:1;
+}
+.img_pizza>div{
+    width:255px; height:345px;
+    border:1px solid black;
+    overflow: hidden;
+}
+.select_pizza{
+    flex:1;
+}
+.btn_size{
+    display: flex;
+}
+.btn_size>div{
+    width:100px; height:50px;
+    border:1px solid #333;
+    background-color: #fff;
+    color:#333;
+}
+.btn_size>div.active{
+    background-color: red;
+    color:#fff;
+}

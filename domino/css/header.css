@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+.w1200{
+    width:1200px;
+    /* background-color: aqua; */
+    margin:0 auto;
+}
+.w100{
+    width:100%;
+    /* 넓이 100%면 가로 스크롤 생기니까 overflow:hidden꼭 넣어줘야함 */
+}
+.bg_icon{
+    /* background-image: url(../img/domino\ icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0; */
+    background: url(../img/domino\ icon.png) no-repeat 0 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+.logo{
+    display: block;
+    width:160px; height:40px;
+    background-position: 0 0;
+    text-indent: -9999px;
+    /* 글자 안보이게 해줌 엄청 큰 숫자 넣어서 */
+}
+.search_wrap{
+    width:345px;
+    border-bottom:1px solid #111;
+    display: flex;
+}
+.arrow{
+    display: inline-block;
+    width:18px; height:18px;
+    background-position: -162px 0;
+}
+.h_btn_wrap>ul{
+    display: flex;
+}
+.h_btn_wrap a{
+    display: block;
+    padding-right:20px;
+    font-size: 14px;
+    color:#111;
+    line-height: 40px;
+}
+.btn_more{
+    position: relative;
+}
+.btn_more::after{
+    content:"";
+    position: absolute;
+    right:-20px; top:3px;
+    width:10px; height:10px;
+    border-bottom:1px solid #000;
+    border-right:1px solid #000;
+    transform: rotate(45deg);
+}
+nav{
+    background-color: white;
+    position: sticky;
+    top:0;
+    border-bottom:1px solid #ddd;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav>ul a{
+    font-size: 18px;
+    color:#111;
+    line-height: 54px;
+}

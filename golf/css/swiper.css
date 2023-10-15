@@ -1,0 +1,39 @@
+.calendar {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: beige;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  .calendar-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+  }
+  
+  .empty-cell {
+    border: none;
+    background-color: blue;
+  }

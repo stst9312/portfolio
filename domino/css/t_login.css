@@ -1,0 +1,148 @@
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px silid #111;
+    padding:28px;
+}
+.title>h2{
+    font-size: 32px;
+    font-weight: 400;
+    color:#111;
+}
+.title ul{
+    display: flex;
+    align-items: flex-end;
+}
+.title a{
+    font-size: 13px;
+    color:#888;
+}
+.title li{
+    font-size: 13px;
+    color:#111;
+}
+article{
+    width:430px;
+    margin:0 auto;
+    padding:50px 0;
+}
+article>ul.tab_wrap{
+    display: flex;
+}
+ul.tab_wrap a{
+    display:block;
+    width:215px;
+    padding:15px 0;
+    text-align: center;
+    color:#111;
+}
+.active{
+    color:#111;
+    border:1px solid #111;
+    border-bottom: none;
+}
+.tab{
+    color:#888;
+    border-bottom:1px solid #111;
+    background-color: #f5f5f5;
+}
+input{
+    border:none;
+    outline:none;
+    /* 테두리선 */
+    background:none;
+}
+.login_form{
+    padding: 50px 0;
+}
+.login_form .item{
+    border:1px solid #ddd; 
+    margin-bottom:10px;
+}
+.login_form .item>input{  
+    font-size: 18px;
+    padding:15px;
+    color: #ddd;
+}
+.chk_item{
+    display: flex;
+    justify-content: space-between;
+}
+.chk_item>ul{
+    display: flex;
+}
+.chk_item label{
+    color:#888;
+}
+.chk_item>ul li{
+    font-size: 14px;
+    color:#888;
+    
+}
+.chk_item>ul a{
+    font-size: 14px;
+    color:#888;
+    padding:0 10px;
+    display: inline-block;
+}
+.login_form .btn_login{
+    background-color: #ff143c;
+    text-align: center;
+    padding:15px;
+    margin:10px 0;
+}
+.login_form .btn_login>input{
+    color:#fff;
+}
+.btn_join{
+    border:1px solid #ddd;
+    padding:15px 0;
+    text-align: center;
+    margin: 10px 0;
+}
+.btn_join>input{
+    color:#111;
+}
+.btn_sns_login_wrap>h3{
+    font-size: 20px;
+    color:#111;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom:20px;
+}
+.btn_sns_login_wrap>ul{
+    display: flex;
+    justify-content: center;
+}
+.btn_sns_login_wrap>ul>li{
+    margin: 0 10px;
+}
+.btn_sns_login_wrap>ul>li>a{
+    display: block;
+    width:50px;
+    padding-top: 55px;
+    font-size: 12px;
+    text-align: center;
+    color:#333;
+}
+.btn_kakao{
+    background-image: url(../img/btn-kakao.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.btn_t{
+    background-image: url(../img/btn-t.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.btn_naver{
+    background-image: url(../img/btn-naver.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.btn_apple{
+    background-image: url(../img/btn-apple.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}

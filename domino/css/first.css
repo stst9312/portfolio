@@ -1,0 +1,504 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    color:black;
+}
+.w1200{
+    width:1200px;
+    /* background-color: aqua; */
+    margin:0 auto;
+}
+.w100{
+    width:100%;
+    /* 넓이 100%면 가로 스크롤 생기니까 overflow:hidden꼭 넣어줘야함 */
+}
+.bg_icon{
+    /* background-image: url(../img/domino\ icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0; */
+    background: url(../img/domino\ icon.png) no-repeat 0 0;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+.logo{
+    display: block;
+    width:160px; height:40px;
+    background-position: 0 0;
+    text-indent: -9999px;
+    /* 글자 안보이게 해줌 엄청 큰 숫자 넣어서 */
+    
+}
+.kor{
+    display:flex;
+}
+.kor1{
+    padding:35px 20px 0 0;
+}
+.login{
+    width:80px;
+    height:35px;
+    border-radius: 20px;
+    background-color: white;
+    color:black;
+    line-height: 35px;
+    text-align: center;
+    margin-top:30px;
+    border:1px solid black;
+}
+.search_wrap{
+    width:345px;
+    border-bottom:1px solid #111;
+    display: flex;
+}
+.arrow{
+    display: inline-block;
+    width:18px; height:18px;
+    background-position: -162px 0;
+}
+.h_btn_wrap>ul{
+    display: flex;
+}
+.h_btn_wrap a{
+    display: block;
+    padding-right:20px;
+    font-size: 14px;
+    color:#111;
+    line-height: 40px;
+}
+.btn_more{
+    position: relative;
+}
+.btn_more::after{
+    content:"";
+    position: absolute;
+    right:-20px; top:3px;
+    width:10px; height:10px;
+    border-bottom:1px solid #000;
+    border-right:1px solid #000;
+    transform: rotate(45deg);
+}
+nav{
+    background-color: white;
+    position: sticky;
+    top:0;
+    z-index: 11;
+    border-bottom: 1px solid #ddd;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav>ul a{
+    font-size: 18px;
+    color:#111;
+    line-height: 54px;
+}
+.more{
+    width:100%;
+    height:300px;
+    border-top: 1px solid #999;
+    position:absolute;
+    top:-300px;
+    z-index: 9;
+    background-color: white;
+    transition: top 1s;
+    
+}
+.more2{
+    margin:0 auto;
+    width:1200px;
+    display: flex;
+}
+.more_left{
+    display: flex;
+    margin-right: 100px;
+    border-right: 1px solid #999;
+}
+.more_left ul{
+    margin:30px 100px 30px 0;
+}
+h3{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.more_left ul>li{
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slide{
+    background-image: url(../img/20230615_BOz6qNv3.jpg);
+    height:495px;
+    position:relative;
+    z-index:3;
+}
+.slide::before{
+    content:' ';
+    /* 글자 */
+    position:absolute;
+    left:80px; top:50%;
+    font-size: 100px;
+    color:white;
+    transform: translateY(-50%);
+    /* 높이 조절 */
+    display: block;
+    width:45px; height:45px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;;
+    transform: rotate(-45deg);
+    /* border로 < 만들기 */
+}
+.slide::after{
+    content:' ';
+    position: absolute;
+    right:80px; top:50%;
+    width:45px; height:45px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    font-size: 100px;
+    color:white;
+}
+/* 가상?? 
+글자 꼭 들어가야함 */
+.slide_num{
+    padding:10px 25px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.7);
+    display: inline-block;
+    /* 넓이 주기 싫을때,
+    position 있으면 안넣어도됨 */
+    position: absolute;
+    bottom:15px; left:50%;
+    transform: translateX(-50%);
+    color:#fff;
+}
+.btn_play{
+    display: inline-block;
+    width:15px;
+    height:15px;
+    margin-left: 10px;
+    background-position: -161px -45px;
+}
+.item_wrap{
+    display: flex;
+}
+.item_wrap>article{
+    flex: 1;
+    /* 1:1:1로 비율 나눠가짐
+    비율 바꾸고 싶으면 바꾸고싶은것에 class 지정해서 0.5 등으로 바꾸기 */
+    padding:50px 0 70px 70px;
+}
+.item_wrap>article>div{
+    width:55px;
+    height:38px;
+}
+.deli>div{
+    background-position: -222px 0;
+}
+.togo>div{
+    background-position: -285px 0;
+}
+.quick>div{
+    background:url(../img/thunder.png) no-repeat; 
+}
+.item_wrap>article>h2{
+    font-size: 42px;
+    font-weight: 400px;
+    letter-spacing: -4px;
+    /* 글자와 글자사이의 간격 줄여줌 */
+}
+.deli>h2{
+    color:#ff143c;
+}
+.togo>h2{
+    color:#1382ff;
+}
+.quick>h2{
+    color:#000;
+}
+.item_wrap>article span{
+    display: inline-block;
+    width:30px; height:30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    position:relative;
+}
+.item_wrap>article span::after{
+    content:'';
+    position:absolute;
+    top:10px; left:9px;
+    width:8px; height:8px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+}
+.deli span{
+    background-color: #ff143c;
+}
+.togo span{
+    background-color: #1382ff;
+}
+.quick span{
+    background-color: #000;
+}
+.item_wrap>article p{
+    color:rgba(0,0,0,0.5);
+}
+.bg_gray{
+    background-color: #f6f6f6;
+    padding:50px 0;
+}
+.bg_gray>div{
+    display:flex;
+    justify-content: space-between;
+}
+.grade{
+    width:270px;
+}
+.grade>p{
+    font-size: 28px;
+    color:#111;
+}
+.grade b{
+    display:block;
+    color:#238ece;
+    font-weight: bold;
+}
+.btn_login{
+    padding:10px 30px;
+    border-radius: 30px;
+    background-color: #222;
+    color:#fff;
+    display: inline-block;
+    margin-top:20px;
+}
+.grade_thum>ul{
+    width:930px;
+    display: flex;
+    justify-content: center;
+}
+.grade_thum>ul>li{
+    margin:5px;
+}
+.bnr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px 0;
+}
+.bnr>.prev>a{
+    display: block;
+    width:35px;
+    height:35px;
+    border-top:1px solid #888;
+    border-left:1px solid #888;
+    transform: rotate(-45deg);
+}
+.bnr>.next>a{
+    display: block;
+    width:35px;
+    height:35px;
+    border-top:1px solid #888;
+    border-right:1px solid #888;
+    transform: rotate(45deg);
+    
+}
+.bnr>article{
+    display: flex;
+}
+.bnr figure{
+    margin:10px;
+    font-size: 0;
+}
+
+
+figcaption{
+    border:1px solid #888;
+    border-top:none;
+    text-align: center;
+    padding:20px 0;
+}
+figcaption>p{
+    color:#888;
+    font-size: 16px;
+    letter-spacing: -2px;
+}
+figcaption>h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+footer{
+    border-top: 1px solid #ddd;
+    padding-top: 52px;
+}
+.f_wrap{
+    display: flex;
+    justify-content: space-between;
+    padding:52px 0;
+}
+.f_top{
+    display: flex;
+    align-items: baseline;
+}
+.f_top>h1{
+    width:125px; height:27px;
+    background-position: 0 -47px;
+}
+.f_top p{
+    font-size: 30px;
+    padding-left:13px;
+}
+
+
+.f_nav{
+    display: flex;
+    margin:10px 0 30px 0;
+}
+.f_nav>li{
+    padding-right: 20px;
+}
+.f_nav>li>a{
+    color:#888;
+}
+.f_nav>li>.hard{
+    color:#111;
+    font-weight: 600;
+}
+address{
+    padding-bottom: 12px;
+}
+address>p{
+    font-size: 12px;
+    color:#888;
+}
+.not1{
+    font-size: 12px;
+    color:#888;
+}
+.f_right{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.lang{
+    width:174px;
+    border-bottom: 1px solid #888;
+}
+dl{
+    font-size: 13px;
+    display:flex;
+    align-items: center;
+}
+dd{
+    width:22px;
+    height:26px;
+    margin-left:10px;
+    padding:10px 0;
+}
+.apple{
+    background-position: -445px 0;
+}
+.google{
+    background-position: -478px 0;
+    margin-top: 5px;
+}
+.sns{
+    margin-top: 170px;
+}
+.sns>ul{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    opacity: .6;
+}
+.sns a{
+    width:25px; height:22px;
+    display: block;
+}
+.bd{
+    background-position: -503px 0;
+}
+.is{
+    background-position: -530px 0;
+}
+.fb{
+    background-position: -556px 0;
+}
+.yb{
+    background-position: -584px 0;
+}
+.tw{
+    background-position: -617px 0;
+}
+
+.award{
+    width:100%;
+    background-color: #f5f5f5;
+    padding:30px 0;
+}
+.award>ul{
+    width:1200px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    
+}
+
+.award>ul>li img{
+    vertical-align: bottom;
+    /* 세로정렬 */
+}
+.award>ul>li{
+    display: inline-block;
+    font-size: 11px;
+    color:#888;
+    margin-left: 7px;
+    letter-spacing: -1px;
+    line-height: 18px;
+}
+.floating{
+    position: fixed;
+    right:50px;
+    top:200px;
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    z-index:9999;
+}
+.floating>a{
+    display: block;
+}
+.floating::after{
+    content:"X";
+    font-size: 24px;
+    position:absolute;
+    right:0;
+    top:0;
+}
+@keyframes float{
+    0%{top:200px}
+    
+    100%{top:180px}
+}
